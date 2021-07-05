@@ -5,9 +5,13 @@ public class Main {
         villy.ram = 8;
         villy.hardDrive = 512;
         villy.countOfCycle = 5;
-
         villy.getInfo();
-        villy.turnOn();
+
+        while (villy.countOfCycle > 1 && !villy.isBurn) {
+            villy.turnOn();
+            villy.turnOn();
+            villy.turnOff();
+        }
 
 
 
